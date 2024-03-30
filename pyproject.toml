@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ranboardom"
-version = "0.1.1"
+version = "0.1.2"
 description = "Print a board of desired size to the console with partially random characters"
 authors = ["Aron Bahram"]
 license = "MIT"
