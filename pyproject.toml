@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ranboardom"
+version = "0.1.0"
+description = "Print a board of desired size to the console with partially random characters"
+authors = ["Aron Bahram"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+numpy = ">=1.26.4"
+click = ">=8.1.7"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=7.4.4"
+pytest-cov = ">=4.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
