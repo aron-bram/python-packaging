@@ -66,9 +66,12 @@ Which outputs something like this without any function arguments:
 The repository is uploaded under [here](https://test.pypi.org/project/ranboardom/)
 
 11) installing the package should be possible from any device and environment (to tell pip to search also on test pypi, we need the following flags):
-`pip install --index-url https://test.pypi.org/simple/ \
-  --extra-index-url https://pypi.org/simple \
-  ranboardom`
+
+```shell
+pip install --index-url https://test.pypi.org/simple/ \
+--extra-index-url https://pypi.org/simple \
+ranboardom
+```
 
 `--extra-index-url` is used to let pip know that not all dependencies are located under test pypi, but rather look for them under pypi
 
