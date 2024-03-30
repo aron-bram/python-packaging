@@ -1,6 +1,12 @@
-# Packaging python
+# Publishing a python package to TestPypi
 
-This project serves as an example for building a python package and uploading to PyPi.
+This project serves as an example for building a python package and uploading to TestPyPi. See instructions [below](#guide-for-building-and-publishing-this-python-package) for a step-by-step guide on how to achieve this.
+
+## Package installation
+
+After creating your own environment, use
+
+`pip install ranboardom`
 
 ## Package usage
 
@@ -18,7 +24,7 @@ Which outputs something like this without any function arguments:
  ['*' 'w' '*' '*' '*']]
 ```
 
-## Workflow for packaging
+## Guide for building and publishing this python package
 
 1) create a separate venv for poetry under the root_directory/venv for example
 
@@ -58,9 +64,8 @@ Which outputs something like this without any function arguments:
 
 `poetry config repositories.test-pypi https://test.pypi.org/legacy/`
 
-10) publish the built package to TestPyPi (this requries a token, which can be generated following 
+10) publish the built package to TestPyPi (this requries a token, which can be generated following [this guide](https://py-pkgs.org/02-setup#register-for-a-pypi-account-and-get-an-authentication-token))
 
-[this guide](https://py-pkgs.org/02-setup#register-for-a-pypi-account-and-get-an-authentication-token))
 `poetry publish -r test-pypi -u __token__ -p TOKEN_COMES_HERE`
 
 The repository is uploaded under [here](https://test.pypi.org/project/ranboardom/)
@@ -77,6 +82,4 @@ ranboardom
 
 ## Useful references
 
-Guide for packaging your code:
-
-`https://py-pkgs.org/03-how-to-package-a-python#packaging-your-code`
+Complete guide for packaging your code is available [here](https://py-pkgs.org/03-how-to-package-a-python#packaging-your-code)
